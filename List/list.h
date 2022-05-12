@@ -6,8 +6,8 @@ typedef struct List_ {
     struct List_* next;
 } List;
 
-void insertNode(List*, int);
-void deleteNode(List*, int);
+void insertNode(List**, int);
+void deleteNode(List**, int);
 void printList(List*);
 int getListLength(List*);
 
