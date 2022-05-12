@@ -1,6 +1,0 @@
-make.exe --dry-run --always-make --keep-going --print-directory
-make.exe: Entering directory `c:/Data_Structure'
-make.exe: Leaving directory `c:/Data_Structure'
- 
-make.exe: *** Ÿ���� �������� �ʾҰ� ����ũ������ �����ϴ�.  ����.
-
