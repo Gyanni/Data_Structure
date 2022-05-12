@@ -13,8 +13,12 @@ int main() {
     insertNode(&myList, 5);
     printList(myList);
 
-    myList = NULL;
+    // 2. Delete Node
     printf("\n");
+    printf("2. Delete Test\n");
 
+    printf("Execute Delete!\n");
+    deleteNode(&myList);
+    printList(myList);
 
 }

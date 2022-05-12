@@ -7,7 +7,7 @@ typedef struct List_ {
 } List;
 
 void insertNode(List**, int);
-void deleteNode(List**, int);
+void deleteNode(List**);
 void printList(List*);
 int getListLength(List*);
 

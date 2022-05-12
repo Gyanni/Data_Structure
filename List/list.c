@@ -22,6 +22,22 @@ void insertNode(List** list, int item) {
     cur->next = newNode;
 }
 
+void deleteNode(List** list) {
+    if (!*list) {
+        printf("Already Empty list!\n");
+        return;
+    }
+
+    List* cur = *list;
+    List* prev = NULL;
+    while (cur->next) {
+        prev = cur;
+        cur = cur->next;
+    }
+
+    prev->next = NULL;
+}
+
 void printList(List* list) {
     if (!list) {
         printf("Empty list!\n");
@@ -33,4 +49,5 @@ void printList(List* list) {
         list = list->next;
         printf(", %d", list->data);
     }
+    printf("\n");
 }
