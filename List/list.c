@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "list.h"
 
+// Time Complexity : O(n)
 void insertNode(List** list, int item) {
     List* newNode = (List*)malloc(sizeof(List));
     if (!newNode) {
@@ -22,6 +23,7 @@ void insertNode(List** list, int item) {
     cur->next = newNode;
 }
 
+// Time Complexity : O(n)
 void deleteNode(List** list) {
     if (!*list) {
         printf("Already Empty list!\n");
@@ -38,6 +40,7 @@ void deleteNode(List** list) {
     prev->next = NULL;
 }
 
+// Time Complexity : O(n)
 void printList(List* list) {
     if (!list) {
         printf("Empty list!\n");
